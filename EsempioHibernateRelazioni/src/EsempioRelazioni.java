@@ -18,7 +18,7 @@ public class EsempioRelazioni {
 //		c2.setModello("Asus");
 		p1.addComputer(c1);
 //		p1.addComputer(c2);
-		c1.addPersona(p1);
+//		c1.addPersona(p1);
 //		c2.addPersona(p1);
 		
 		Session session =HibernateUtil.openSession();
