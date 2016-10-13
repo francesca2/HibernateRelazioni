@@ -20,6 +20,9 @@ public class Persona {
 //		private Computer computer;
 		//relazione many to one
 //		@OneToMany(mappedBy="persona")
+		//Nella relazione one to many se ho i campi vuoti in genere lancia l'eccezione, con questa istruzione
+		//non lancia l'eccezione ma va avanti comunque.
+//		@NotFound(action=NotFoundAction.IGNORE)
 		//relazione many to many, il mapped mi serve per non creare due tabelle join
 		@ManyToMany(mappedBy="persone")
 		private Set<Computer> computer=new HashSet<Computer>();
